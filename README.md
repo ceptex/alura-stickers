@@ -1,6 +1,10 @@
-## Getting Started
+## Alura Stickers
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Heyo!
+
+This is an application that I'm creating to study Java.
+
+For now, I'm reading and parsing IMDB API for the 250 best ranked movies. This application will be updated and upgraded frequently.
 
 ## Folder Structure
 
