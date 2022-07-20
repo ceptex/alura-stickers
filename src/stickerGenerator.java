@@ -9,9 +9,10 @@ import javax.imageio.ImageIO;
 public class stickerGenerator {
 
     public void cria(InputStream inputStream, String nomeArquivo) throws Exception {
-        
+
         // leitura da imagem
-        //InputStream inputStream = new URL("https://imersao-java-apis.s3.amazonaws.com/TopMovies_1.jpg").openStream();
+        // InputStream inputStream = new
+        // URL("https://imersao-java-apis.s3.amazonaws.com/TopMovies_1.jpg").openStream();
         BufferedImage imagemOriginal = ImageIO.read(inputStream);
 
         // cria nova imagem em memória com transparência e tamanho novo
@@ -34,7 +35,7 @@ public class stickerGenerator {
 
         // escrever a nova imagem no arquivo
         nomeArquivo.concat(".png");
-        File figure = new File ("../saida/"+nomeArquivo);
+        File figure = new File("../saida/" + nomeArquivo);
         ImageIO.write(novaImagem, "png", figure);
     }
 }
