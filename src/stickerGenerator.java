@@ -4,8 +4,6 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.InputStream;
-import java.net.URL;
-
 import javax.imageio.ImageIO;
 
 public class stickerGenerator {
@@ -35,6 +33,8 @@ public class stickerGenerator {
         graphics.drawString("TOPZERA!?", largura - 480, novaAltura - 80);
 
         // escrever a nova imagem no arquivo
-        ImageIO.write(novaImagem, "png", new File("/saida/" + nomeArquivo));
+        nomeArquivo.concat(".png");
+        File figure = new File ("../saida/"+nomeArquivo);
+        ImageIO.write(novaImagem, "png", figure);
     }
 }
